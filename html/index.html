@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUALYMPO</title>
+
+    <link rel="icon" type="image/png" href="../img/logotopo-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <section id="barra-acessibilidade" aria-label="Ferramentas de acessibilidade">
+        <div class="acessibilidade">
+            <button type="button" onclick="aumentarFonte()" aria-label="Aumentar tamanho da letra">A+</button>
+            <button type="button" onclick="diminuirFonte()" aria-label="Diminuir tamanho da letra">A-</button>
+            <button type="button" onclick="contraste()" aria-label="Ativar ou desativar alto contraste">CONTRASTE</button>
+        </div>
+    </section>
+
+    <header>
+        <div id="logo">
+            <img src="../img/aqualympo.png" alt="Logo da Empresa AQUALYMPO">
+        </div>
+
+        <nav aria-label="Navegação principal">
+            <a href="#sobre">SOBRE</a>
+            <a href="#produtos">PRODUTOS</a>
+            <a href="#vantagens">VANTAGENS</a>
+            <a href="#depoimentos">DEPOIMENTOS</a>
+            <a href="#localizacao">LOCALIZAÇÃO</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+
+        <a id="botao" href="#inscreva">INSCREVA-SE</a>
+    </header>
+
+    <main>
+        <section aria-label="Banners">
+            <div id="hero">
+                <img id="imagemBanner" src="../img/Banner_Conheça.png" alt="AQUALYMPO - Conheça a empresa">
+                <img id="proximaBanner" src="../img/Banne_Site.png" alt="" aria-hidden="true">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <img src="../img/Banner_Apresentação.png" alt="Sobre a empresa AQUALYMPO">
+        </section>
+
+        <section id="produtos">
+            <h1>NOSSOS PRODUTOS</h1>
+
+            <div class="itens">
+                <img src="../img/estação-removebg-preview.png" alt="Mini estação de purificação">
+                <div>
+                    <h2>MINI ESTAÇÕES DE PURIFICAÇÃO</h2>
+                    <p class="texto2">
+                        A estação de purificação de água filtra e elimina impurezas,
+                        bactérias e resíduos através de sistemas de tratamento,
+                        garantindo água limpa, segura e própria para consumo.
+                    </p>
+                    <button class="btn" type="button">PRODUTO DISPONIBILIZADO PARA DOAÇÃO</button>
+                </div>
+            </div>
+
+            <div class="itens">
+                <img src="../img/filtro-removebg-preview.png" alt="Filtro de água acoplado">
+                <div>
+                    <h2>FILTROS DE ÁGUA ACOPLADOS</h2>
+                    <p class="texto2">
+                        O filtro serve para purificar a água da torneira,
+                        removendo cloro, sujeira e odores. Ele garante água
+                        segura e saborosa para beber ou cozinhar, além de gerar
+                        economia e reduzir o uso de garrafas plásticas.
+                    </p>
+                    <button class="btn" type="button">PRODUTO DISPONIBILIZADO PARA DOAÇÃO</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="vantagens">
+            <div id="vantagens1">
+                <img src="../img/banner.jpg" alt="Vantagens da AQUALYMPO">
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h1>DEPOIMENTOS</h1>
+
+            <div id="comentarios">
+                <div class="quadrado">
+                    <img class="foto" src="../img/foto1-removebg-preview.png" alt="Avaliação">
+                    <img class="estrela" src="../img/estrela1.png" alt="5 estrelas">
+                    <p>Parabéns pelo olhar social! Levar saúde para quem mais precisa é o que realmente faz a diferença.</p>
+                </div>
+
+                <div class="quadrado">
+                    <img class="foto" src="../img/foto2-removebg-preview.png" alt="Avaliação">
+                    <img class="estrela" src="../img/estrela2.png" alt="4 estrelas e meia">
+                    <p>Muito bom ver uma empresa tratando o saneamento como o direito humano que ele é. Continuem assim!</p>
+                </div>
+
+                <div class="quadrado">
+                    <img class="foto" src="../img/foto3-removebg-preview.png" alt="Avaliação">
+                    <img class="estrela" src="../img/estrela3.png" alt="4 estrelas">
+                    <p>O serviço é muito bom, especialmente pelo olhar social voltado para quem mais precisa. É gratificante ver essa evolução.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pratique">
+            <div class="pratique1">
+                <img src="../img/bannerágua.jpg" alt="Pratique hábitos de consumo de água">
+            </div>
+        </section>
+
+        <section id="inscreva">
+            <h1>INSCREVA-SE</h1>
+
+            <form id="formu">
+                <input type="text" id="nome" placeholder="Nome" autocomplete="name">
+                <input type="email" id="email" placeholder="E-mail" autocomplete="email">
+                <input type="text" id="numero" placeholder="Número" autocomplete="tel">
+                <button type="button" id="enviar">Enviar</button>
+            </form>
+        </section>
+
+        <section id="localizacao">
+            <h1>LOCALIZAÇÃO</h1>
+
+            <div class="localizacao-container">
+                <div class="endereco">
+                    <h2>ONDE ESTAMOS</h2>
+                    <p>Rua Pastor Antonio Canossa</p>
+                    <p>Residencial dos Ipês</p>
+                    <p>Catanduva - SP</p>
+                    <p>CEP: 15808-524</p>
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=-21.14901,-48.93683"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-localizacao">
+                        VER NO GOOGLE MAPS
+                    </a>
+                </div>
+
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps?q=-21.14901,-48.93683&output=embed"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da AQUALYMPO em Catanduva - SP">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h1>CONTATO</h1>
+
+            <div class="contato2">
+                <div id="info">
+                    <p>(00) 00000-0000</p>
+                    <p>@aqualympo.br</p>
+                    <p>suporte@aqualympo.com.br</p>
+                </div>
+
+                <div id="redes">
+                    <h2>REDES SOCIAIS</h2>
+                    <div id="social">
+                        <img src="../img/redessociais.png" alt="Redes Sociais">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>TODOS OS DIREITOS <br>RESERVADOS A EMPRESA</p>
+        <p>COPYRIGHT 2026</p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script>
+        /* ================= BANNER ================= */
+        const imagens = [
+            "../img/Banner_Conheça.png",
+            "../img/Banne_Site.png"
+        ];
+
+        let indice = 0;
+        const bannerAtual = document.getElementById("imagemBanner");
+        const proximaBanner = document.getElementById("proximaBanner");
+
+        function trocarImagem() {
+            indice = (indice + 1) % imagens.length;
+            proximaBanner.src = imagens[indice];
+            proximaBanner.style.opacity = "1";
+
+            setTimeout(() => {
+                bannerAtual.src = imagens[indice];
+                proximaBanner.style.opacity = "0";
+            }, 950);
+        }
+
+        setInterval(trocarImagem, 2500);
+
+        /* ================= ACESSIBILIDADE ================= */
+        let tamanhoFonte = 100;
+
+        function aplicarTamanhoFonte() {
+            const elementos = document.querySelectorAll(
+                "h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, label, li"
+            );
+
+            elementos.forEach((elemento) => {
+                // Guarda o tamanho original apenas uma vez.
+                if (!elemento.dataset.tamanhoOriginal) {
+                    const tamanhoAtual = parseFloat(getComputedStyle(elemento).fontSize);
+                    elemento.dataset.tamanhoOriginal = tamanhoAtual;
+                }
+
+                const original = parseFloat(elemento.dataset.tamanhoOriginal);
+                elemento.style.fontSize = (original * tamanhoFonte / 100) + "px";
+            });
+        }
+
+        function aumentarFonte() {
+            if (tamanhoFonte < 150) {
+                tamanhoFonte += 10;
+                aplicarTamanhoFonte();
+            }
+        }
+
+        function diminuirFonte() {
+            if (tamanhoFonte > 70) {
+                tamanhoFonte -= 10;
+                aplicarTamanhoFonte();
+            }
+        }
+
+        function fonteNormal() {
+            tamanhoFonte = 100;
+            aplicarTamanhoFonte();
+        }
+
+        function contraste() {
+            document.body.classList.toggle("alto-contraste");
+        }
+
+        // Garante que a acessibilidade continue funcionando após o carregamento.
+        window.addEventListener("DOMContentLoaded", aplicarTamanhoFonte);
+    </script>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+</body>
+</html>
