@@ -161,6 +161,7 @@
             width: min(260px, 32%);
             height: auto;
             object-fit: contain;
+            cursor: pointer;
         }
 
         .itens img:hover {
@@ -169,7 +170,6 @@
         }
 
         .itens > div {
-            flex: 1 1 0;
             min-width: 0;
         }
 
@@ -202,6 +202,11 @@
             line-height: 1.2;
         }
 
+        .direita{
+            align-items: flex-end;
+        }
+
+
         /* ================= VANTAGENS / PRATIQUE ================= */
         #vantagens, #pratique {
             width: 100%;
@@ -223,9 +228,9 @@
         }
 
         #depoimentos h1 {
-            margin-bottom: 35px;
             font-family: Georgia, "Times New Roman", serif;
             font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 15px;
         }
 
         #comentarios {
@@ -234,7 +239,7 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 10px;
+            gap: 20px;
         }
 
         .quadrado {
@@ -245,7 +250,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 14px;
             background: #fff;
             border-radius: 28px;
         }
@@ -261,12 +265,15 @@
             object-fit: contain;
         }
 
-        .quadrado h3 {
-            font-weight: normal;
+        .quadrado h2 {
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 2;
+            margin-top:5px;
         }
 
         .quadrado .estrela {
-            width: 135px;
+            width: 115px;
             height: auto;
         }
 
